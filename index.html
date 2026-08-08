@@ -282,5 +282,34 @@ generate();
 <div><a href="https://tabutility.com" style="color:#818cf8;font-weight:600;text-decoration:none">All Tools</a> · <a href="https://tabutility.com/blog/" style="color:#94a3b8;text-decoration:none">Blog</a> · <a href="https://tabutility.com/#about" style="color:#94a3b8;text-decoration:none">About</a></div>
 <div style="margin-top:6px;color:#64748b">© 2026 Tabutility</div>
 </footer>
+<section id="seo-content">
+<style>
+#seo-content{max-width:660px;margin:40px auto;padding:0 20px;font-family:'Segoe UI',system-ui,Arial,sans-serif;color:#94a3b8;line-height:1.7;font-size:15px}
+#seo-content h2{color:#f1f5f9;font-size:22px;margin:0 0 12px}
+#seo-content h3{color:#f1f5f9;font-size:18px;margin:26px 0 10px}
+#seo-content h4{color:#f1f5f9;font-size:15px;margin:16px 0 4px}
+#seo-content p{margin:0 0 12px}
+#seo-content code{background:#0f172a;color:#c7d2fe;padding:1px 5px;border-radius:4px;font-size:13px}
+#seo-content .example{background:#1e293b;border:1px solid #334155;border-left:3px solid #4f46e5;border-radius:10px;padding:14px 18px;margin:12px 0}
+#seo-content .example strong{color:#f1f5f9;display:block;margin-bottom:4px}
+#seo-content ul{margin:0 0 12px;padding-left:20px}
+#seo-content li{margin:4px 0}
+</style>
+<h2>What is the Password Generator?</h2>
+<p>A password generator creates strong, random passwords that are far harder to guess or crack than anything you would invent yourself. This free password generator runs entirely in your browser using a cryptographically secure random source, so nothing is ever transmitted.</p>
+<h3>How it works</h3>
+<p>Strength is measured in bits of entropy: <em>entropy = length × log2(pool size)</em>, where the pool is the number of possible characters. A 16-character password using upper, lower, digits and symbols (~94 characters) has about 16 × 6.55 ≈ 105 bits of entropy.</p>
+<p>The generator picks each character with <code>crypto.getRandomValues()</code>, a cryptographically secure random number generator, so the result is unpredictable and never reused or stored.</p>
+<div class="example"><strong>A 12-character password</strong>Using all four character types (~94 symbols), a 12-character password carries roughly 79 bits of entropy — strong enough that brute force is impractical for typical attackers.</div>
+<div class="example"><strong>A 20-character passphrase-style key</strong>Increasing length to 20 characters raises entropy to about 131 bits. Each extra character adds ~6.55 bits, so length matters more than exotic symbols for real-world strength.</div>
+<h3>When to use it</h3>
+<ul><li>Creating a unique password for every account.</li><li>Generating a master password for your password manager.</li><li>Producing API keys, database passwords or Wi-Fi keys.</li><li>Replacing a weak or reused password after a breach.</li></ul>
+<h3>Frequently asked questions</h3>
+<h4>Is the Password Generator secure?</h4><p>Yes — passwords are generated using your browser&#x27;s cryptographically secure random number generator (crypto.getRandomValues).</p>
+<h4>Are passwords saved anywhere?</h4><p>No — everything happens in your browser, nothing is sent to any server.</p>
+<h4>Is the Password Generator free?</h4><p>Yes — completely free, no sign-up needed.</p>
+<h4>Can I use the Password Generator on mobile?</h4><p>Yes — works on any device.</p>
+<h4>How long should my password be?</h4><p>Aim for at least 12–16 characters. Length adds far more strength than complexity, so a longer password with mixed character types is best for important accounts.</p>
+</section>
 </body>
 </html>
