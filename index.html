@@ -311,6 +311,106 @@ generate();
 <div>Free, private, browser-based tools. No sign-up, no tracking.</div>
 <div style="margin-top:6px"><a href="https://tabutility.com" style="color:#818cf8;font-weight:600;text-decoration:none">All Tools</a> · <a href="https://tabutility.com/blog/" style="color:#94a3b8;text-decoration:none">Blog</a> · <a href="https://tabutility.com/about/" style="color:#94a3b8;text-decoration:none">About</a> · <a href="https://tabutility.com/privacy-policy/" style="color:#94a3b8;text-decoration:none">Privacy</a> · <a href="https://tabutility.com/contact/" style="color:#94a3b8;text-decoration:none">Contact</a></div>
 <div style="margin-top:6px;color:#64748b">© 2026 Tabutility</div>
-</footer>
+
+  <section id="seo-content" style="background:#1a1a2e;color:#e2e8f0;padding:60px 20px;margin-top:40px;border-top:1px solid #2d3748;">
+    <div style="max-width:860px;margin:0 auto;font-family:system-ui,-apple-system,sans-serif;line-height:1.7;">
+      <h2 style="font-size:2rem;font-weight:700;color:#f1f5f9;margin-bottom:24px;">How to Use the Password Generator</h2>
+      <p style="margin-bottom:16px;color:#cbd5e1;">The Password Generator creates cryptographically random passwords with your chosen length, character sets, and complexity requirements. All generation happens entirely in your browser — nothing is ever sent to a server, making this tool completely private and secure.</p>
+      <p style="margin-bottom:16px;color:#cbd5e1;">Select your desired password length (we recommend 16+ characters for most accounts, 24+ for banking and email), then choose which character types to include: uppercase letters, lowercase letters, numbers, and special symbols. Generate multiple passwords at once and copy with one click.</p>
+      <p style="margin-bottom:16px;color:#cbd5e1;">A critical nuance is password entropy — the measure of how unpredictable a password is. Entropy increases with both length and character variety. A 16-character password using all character types has approximately 105 bits of entropy, making it computationally impossible to brute-force with current technology.</p>
+
+      <div style="background:#0f172a;border:1px solid #334155;border-radius:12px;padding:28px;margin:32px 0;">
+        <h3 style="font-size:1.2rem;font-weight:600;color:#f1f5f9;margin-bottom:16px;">📊 Worked Example</h3>
+        <p style="color:#94a3b8;margin:0 0 12px;">Password strength comparison at different lengths (all character types):</p>
+        <ul style="list-style:none;padding:0;margin:0;color:#cbd5e1;">
+          <li style="padding:6px 0;border-bottom:1px solid #1e293b;">8 characters: <strong style="color:#f87171;">~52 bits entropy — crackable in hours with GPU</strong></li>
+          <li style="padding:6px 0;border-bottom:1px solid #1e293b;">12 characters: <strong style="color:#f1f5f9;">~78 bits — crackable in years, but not safe</strong></li>
+          <li style="padding:6px 0;border-bottom:1px solid #1e293b;">16 characters: <strong style="color:#34d399;">~105 bits — effectively uncrackable</strong></li>
+          <li style="padding:6px 0;">20 characters: <strong style="color:#34d399;">~131 bits — no foreseeable risk</strong></li>
+        </ul>
+      </div>
+
+      <h3 style="font-size:1.4rem;font-weight:600;color:#f1f5f9;margin:32px 0 16px;">Common Use Cases</h3>
+      <ul style="list-style:none;padding:0;margin:0 0 32px;">
+        <li style="padding:8px 0;border-bottom:1px solid #1e293b;color:#cbd5e1;">✅ Creating a new strong password for any online account</li>
+        <li style="padding:8px 0;border-bottom:1px solid #1e293b;color:#cbd5e1;">✅ Generating passwords for a password manager vault</li>
+        <li style="padding:8px 0;border-bottom:1px solid #1e293b;color:#cbd5e1;">✅ Creating temporary passwords for new user accounts</li>
+        <li style="padding:8px 0;border-bottom:1px solid #1e293b;color:#cbd5e1;">✅ Generating API keys or secrets for development projects</li>
+        <li style="padding:8px 0;border-bottom:1px solid #1e293b;color:#cbd5e1;">✅ Producing bulk passwords for testing or provisioning</li>
+        <li style="padding:8px 0;border-bottom:1px solid #1e293b;color:#cbd5e1;">✅ Creating a random passphrase when your system allows longer passwords</li>
+      </ul>
+
+      <h3 style="font-size:1.4rem;font-weight:600;color:#f1f5f9;margin:32px 0 24px;">Frequently Asked Questions</h3>
+      <div style="margin-bottom:24px;">
+        <h4 style="font-size:1rem;font-weight:600;color:#f1f5f9;margin-bottom:8px;">How long should a strong password be?</h4>
+        <p style="color:#cbd5e1;margin:0;">Security experts currently recommend 16 characters minimum for important accounts (email, banking, social media). For high-value targets, 20+ characters is better. Length matters more than complexity — a 20-character lowercase-only password is stronger than an 8-character one with all character types.</p>
+      </div>
+      <div style="margin-bottom:24px;">
+        <h4 style="font-size:1rem;font-weight:600;color:#f1f5f9;margin-bottom:8px;">Is it safe to generate passwords in a browser?</h4>
+        <p style="color:#cbd5e1;margin:0;">Yes, when the generator uses the browser's built-in cryptographic API (window.crypto.getRandomValues). This generates true cryptographic randomness. Our generator uses this approach and runs entirely client-side — your passwords are never transmitted anywhere.</p>
+      </div>
+      <div style="margin-bottom:24px;">
+        <h4 style="font-size:1rem;font-weight:600;color:#f1f5f9;margin-bottom:8px;">Should I use a password manager?</h4>
+        <p style="color:#cbd5e1;margin:0;">Absolutely. A password manager lets you have a unique, strong password for every site without needing to remember them. Only remember one strong master password. Leading options include Bitwarden (free, open source), 1Password, Dashlane, and browser-built-in managers like those in Chrome and Firefox.</p>
+      </div>
+      <div style="margin-bottom:24px;">
+        <h4 style="font-size:1rem;font-weight:600;color:#f1f5f9;margin-bottom:8px;">Are passphrases stronger than passwords?</h4>
+        <p style="color:#cbd5e1;margin:0;">Passphrases — strings of 4–6 random words like 'correct-horse-battery-staple' — can be both strong and memorable. At 25+ characters, even a lowercase passphrase has strong entropy. The advantage is memorability; the disadvantage is some sites limit password length or require symbols.</p>
+      </div>
+      <div style="margin-bottom:24px;">
+        <h4 style="font-size:1rem;font-weight:600;color:#f1f5f9;margin-bottom:8px;">What makes a password weak?</h4>
+        <p style="color:#cbd5e1;margin:0;">Weak passwords include: dictionary words (even with l33t substitutions), names and dates, sequences (123456, qwerty), anything under 10 characters, and passwords reused across sites. Even a complex 8-character password can be cracked in under an hour with a GPU-based attack using leaked password databases.</p>
+      </div>
+    </div>
+  </section>
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How long should a strong password be?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Security experts currently recommend 16 characters minimum for important accounts (email, banking, social media). For high-value targets, 20+ characters is better. Length matters more than complexity — a 20-character lowercase-only password is stronger than an 8-character one with all character types."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is it safe to generate passwords in a browser?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, when the generator uses the browser's built-in cryptographic API (window.crypto.getRandomValues). This generates true cryptographic randomness. Our generator uses this approach and runs entirely client-side — your passwords are never transmitted anywhere."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Should I use a password manager?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Absolutely. A password manager lets you have a unique, strong password for every site without needing to remember them. Only remember one strong master password. Leading options include Bitwarden (free, open source), 1Password, Dashlane, and browser-built-in managers like those in Chrome and Firefox."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are passphrases stronger than passwords?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Passphrases — strings of 4–6 random words like 'correct-horse-battery-staple' — can be both strong and memorable. At 25+ characters, even a lowercase passphrase has strong entropy. The advantage is memorability; the disadvantage is some sites limit password length or require symbols."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What makes a password weak?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Weak passwords include: dictionary words (even with l33t substitutions), names and dates, sequences (123456, qwerty), anything under 10 characters, and passwords reused across sites. Even a complex 8-character password can be cracked in under an hour with a GPU-based attack using leaked password databases."
+      }
+    }
+  ]
+}
+  </script>
+  </footer>
 </body>
 </html>
